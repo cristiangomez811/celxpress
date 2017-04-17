@@ -99,6 +99,7 @@ use yii\caching\Cache;
  * configuration like the following:
  *
  * ```php
+ 
  * 'components' => [
  *     'db' => [
  *         'class' => '\yii\db\Connection',
@@ -108,6 +109,7 @@ use yii\caching\Cache;
  *         'charset' => 'utf8',
  *     ],
  * ],
+ /**
  * ```
  *
  * @property string $driverName Name of the DB driver.
