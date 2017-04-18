@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Factura_Login */
 
-$this->title = 'Update Factura  Login: ' . $model->NO_ORDEN;
-$this->params['breadcrumbs'][] = ['label' => 'Factura  Logins', 'url' => ['index']];
+$this->title = 'Editar Factura ' . $model->NO_ORDEN;
+$this->params['breadcrumbs'][] = ['label' => 'Factura ', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->NO_ORDEN, 'url' => ['view', 'id' => $model->NO_ORDEN]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Editar';
 ?>
 <div class="factura--login-update">
 

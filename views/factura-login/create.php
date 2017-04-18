@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Factura_Login */
 
-$this->title = 'Create Factura  Login';
-$this->params['breadcrumbs'][] = ['label' => 'Factura  Logins', 'url' => ['index']];
+$this->title = 'Crear Factura';
+$this->params['breadcrumbs'][] = ['label' => 'Factura', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="factura--login-create">

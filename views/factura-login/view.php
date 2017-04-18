@@ -7,22 +7,23 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Factura_Login */
 
 $this->title = $model->NO_ORDEN;
-$this->params['breadcrumbs'][] = ['label' => 'Factura  Logins', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Facturas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="factura--login-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1>factura: <?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->NO_ORDEN], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->NO_ORDEN], [
+        <?= Html::a('Editar', ['update', 'id' => $model->NO_ORDEN], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Eliminar', ['delete', 'id' => $model->NO_ORDEN], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => '¿Esta seguro de eliminar esta factura?',
                 'method' => 'post',
             ],
         ]) ?>
+
     </p>
 
     <?= DetailView::widget([

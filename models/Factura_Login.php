@@ -36,11 +36,11 @@ class Factura_Login extends \yii\db\ActiveRecord
     {
         return [
             [['CC', 'NOMBRE', 'TELEFONO_UNO', 'FECHA', 'PROCESO', 'VALOR', 'IMEI', 'MARCA_MODELO'], 'required'],
-            [['CC', 'TELEFONO_UNO', 'TELEFONO_DOS', 'VALOR', 'IMEI'], 'integer'],
+            [['CC', 'TELEFONO_UNO', 'TELEFONO_DOS', 'IMEI'], 'integer'],
             [['FECHA'], 'safe'],
             [['PROCESO', 'MARCA_MODELO'], 'string'],
             [['NOMBRE'], 'string', 'max' => 50],
-            [['ESTADO'], 'string', 'max' => 10],
+            [['ESTADO', 'VALOR'], 'string', 'max' => 10],
             [['TELEFONO_UNO','TELEFONO_DOS'], 'string','max' => 10],
         ];  
     }
